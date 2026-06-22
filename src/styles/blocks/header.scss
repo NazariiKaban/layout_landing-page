@@ -1,0 +1,39 @@
+.header {
+  box-sizing: border-box;
+  height: 100vh;
+  background-image: url(../images/bike.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+
+
+    &-title {
+      margin-top: 64px;
+      font-weight: 700;
+      font-size: 80px;
+      letter-spacing: -1.5px;
+      font-style: bold;
+    }
+
+    @media (max-width: 744px) {
+      &-title {
+        font-size: 64px;
+      }
+    }
+  }
+}

@@ -1,3 +1,9 @@
-body {
-  margin: 0;
-}
+@import './utils/mixins.scss';
+@import 'blocks/varibales';
+@import 'blocks/page';
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/menu';
+@import 'blocks/icon';
+@import 'blocks/footer';
+

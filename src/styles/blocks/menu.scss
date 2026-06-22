@@ -1,0 +1,78 @@
+.top-bar {
+  display: flex;
+  align-items: center;
+  height: 128px;
+  justify-content: space-between;
+
+  &__icons {
+    display: flex;
+    gap: 32px;
+    padding-right: 120px;
+  }
+
+  &__logo {
+    display: flex;
+    padding-left: 120px;
+    @include hover(transform, scale(1.2));
+  }
+
+  @media (max-width: 744px) {
+    &__logo {
+      padding-left: 72px;
+    }
+
+    &__icons {
+      padding-right: 72px;
+    }
+  }
+}
+
+.menu {
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #c2c2c2;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &__top {
+    display: flex;
+    height: 128px;
+    justify-content: space-between;
+  }
+
+  &__phone-number {
+    width: fit-content;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    display: block;
+    font-size: 16px;
+    line-height: 27px;
+    color: #1d1d1d;
+    text-decoration: none;
+    letter-spacing: 0px;
+  }
+
+  &__book-a-ride {
+    width: fit-content;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #1d1d1d;
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    color: #1d1d1d;
+    text-decoration: none;
+  }
+
+  &__bottom {
+    padding-inline: 120px;
+  }
+
+  @media (max-width: 744px) {
+    &__bottom {
+      padding-inline: 72px;
+    }
+  }
+}
