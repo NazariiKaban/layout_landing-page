@@ -2,7 +2,7 @@
   box-sizing: border-box;
   height: 100vh;
   background-image: url(../images/bike.jpg);
-  background-position: center center;
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -20,7 +20,6 @@
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-
 
     &-title {
       margin-top: 64px;

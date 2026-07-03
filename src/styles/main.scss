@@ -1,9 +1,37 @@
-@import './utils/mixins.scss';
-@import 'blocks/varibales';
+@import './utils/mixins';
+@import './utils/varibales';
 @import 'blocks/page';
-@import 'blocks/header';
-@import 'blocks/nav';
-@import 'blocks/menu';
+@import 'blocks/header/header';
+@import 'blocks/header/nav';
+@import 'blocks/header/menu';
 @import 'blocks/icon';
 @import 'blocks/footer';
+@import 'blocks/main-content/content';
+@import 'blocks/main-content/promo';
+@import 'blocks/main-content/product';
 
+.section-title {
+  font-weight: 500;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: -1.5px;
+}
+
+.recommended {
+  margin: 0 auto;
+  padding-inline: 120px;
+
+  &__products {
+    display: grid;
+    gap: 24px;
+
+    @include on-desktop {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__title {
+    margin-top: 164px;
+    text-align: center;
+  }
+}

@@ -2,12 +2,10 @@
   display: block;
   height: 24px;
   width: 24px;
-  background-size:cover;
+  background-size: cover;
   image-rendering: pixelated;
 
   @include hover(transform, scale(1.2));
-
-
 
   &--phone {
     background-image: url(../images/Icon-Phone-call.svg);
