@@ -18,8 +18,13 @@
   &__menu {
     position: fixed;
     top: 0;
-    right: 0;
+    right: auto;
     left: 0;
+    margin: 0;
+    padding: 0;
+
+    width: 100vw;
+    height: 100vh;
 
     opacity: 0;
     transition: all 0.5s;
@@ -31,5 +36,6 @@
     opacity: 1;
     transform: translateX(0);
     pointer-events: all;
+    z-index: 100;
   }
 }
