@@ -9,29 +9,147 @@
 @import 'blocks/main-content/content';
 @import 'blocks/main-content/promo';
 @import 'blocks/main-content/product';
-
+@import 'blocks/main-content/recommended';
+@import 'blocks/main-content/categories';
 .section-title {
   font-weight: 500;
-  font-size: 64px;
+  font-size: 32px;
   line-height: 100%;
   letter-spacing: -1.5px;
+  white-space: nowrap;
+
+  @include on-tablet {
+    font-size: 48px;
+  }
+  @include on-desktop {
+    font-size: 64px;
+  }
 }
 
-.recommended {
+.button {
   margin: 0 auto;
-  padding-inline: 120px;
+  width: 278px;
+  height: 56px;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 27px;
+  font-style: bold;
+  color: #1d1d1d;
 
-  &__products {
-    display: grid;
-    gap: 24px;
+  @include on-tablet {
+    width: 392px;
+  }
+  @include on-desktop {
+    width: 324px;
+  }
+}
 
-    @include on-desktop {
-      grid-template-columns: repeat(3, 1fr);
-    }
+.contacts {
+  &__wrapper {
+    @include page-grid;
+    align-items: start;
   }
 
   &__title {
-    margin-top: 164px;
     text-align: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 48px;
+
+    @include on-tablet {
+      margin-top: 120px;
+    }
+    @include on-desktop {
+      margin-top: 180px;
+    }
+  }
+
+  &__form {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: span 3;
+    }
+    @include on-desktop {
+      grid-column: 1 / 6;
+    }
+  }
+
+  &__contact-info {
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: span 3;
+    }
+    @include on-desktop {
+      grid-column: 8 / 11;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    height: 48px;
+    border-radius: 40px;
+    background-color: #f8f8fa;
+    margin-bottom: 8px;
+
+    &::placeholder {
+      font-family: Poppins;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #7e7e83;
+      padding-left: 16px;
+    }
+  }
+
+  &__textarea {
+    height: 148px;
+    border-radius: 16px;
+  }
+
+  &__button {
+    margin-top: 8px;
+    width: 100%;
+    height: 56px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 27px;
+    font-style: bold;
+    color: #1d1d1d;
+  }
+
+  &__contact-info {
+    margin-top: 48px;
+    margin-bottom: 120px;
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 140%;
+  }
+
+  &__text {
+    padding-top: 8px;
+    padding-bottom: 24px;
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+}
+
+.footer {
+  height: auto;
+  width: 100%;
+
+  &__photo {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
   }
 }

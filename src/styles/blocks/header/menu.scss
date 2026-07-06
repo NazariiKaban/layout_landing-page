@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   height: 128px;
-  align-items: center;
   justify-content: space-between;
 
   &__icons {
@@ -23,7 +22,7 @@
   text-transform: uppercase;
 
   &__content {
-    @include content-padding-inline();
+    @include content-padding-inline;
 
     display: flex;
     flex-direction: column;

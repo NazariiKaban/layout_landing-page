@@ -5,7 +5,7 @@
   background-size: cover;
 
   &__content {
-    @include content-padding-inline();
+    @include content-padding-inline;
 
     display: flex;
     flex-direction: column;

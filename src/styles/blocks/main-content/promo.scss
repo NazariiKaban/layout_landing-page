@@ -2,24 +2,32 @@
   margin-top: 120px;
 
   &__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 0 auto;
+    @include page-grid;
   }
 
   &__title {
-    width: 411px;
-    margin-left: 90px;
-    text-align: none;
+    grid-column: 1 / -1;
+    padding-bottom: 32px;
+
+    @include on-tablet {
+      grid-column: 1 / 4;
+    }
+    @include on-desktop {
+      grid-column: 1 / 5;
+    }
   }
 
   &__text {
+    grid-column: 1 / -1;
     font-weight: 500;
     font-size: 23px;
     line-height: 140%;
-    max-width: 500px;
-    margin-right: 173px;
+
+    @include on-tablet {
+      grid-column: 4 / -1;
+    }
+    @include on-desktop {
+      grid-column: 6 / 12;
+    }
   }
 }
