@@ -37,7 +37,10 @@
     <header class="header">
       <div class="header__content">
         <div class="top-bar">
-          <a href="#" class="top-bar__logo">
+          <a
+            href="#"
+            class="top-bar__logo"
+          >
             <img
               class="logo"
               src="src/images/whitelogo.svg"
@@ -327,6 +330,7 @@
         <h2 class="contacts__title section-title">Contact us</h2>
         <div class="contacts__wrapper">
           <form
+            onsubmit="this.reset(); return false;"
             class="contacts__form"
             method="POST"
             action="#"
@@ -364,7 +368,16 @@
             <h3 class="contacts__text">hello@miami.com</h3>
             Address
             <h3 class="contacts__text">
-              400 first ave.<br> suite 700<br> Minneapolis, MN 55401
+              <a
+                target="_blank"
+                href="https://www.google.com/search?q=400+first+ave.+suite+700+Minneapolis%2C+MN+55401&oq=400+first+ave.+suite+700+Minneapolis%2C+MN+55401&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIHCAEQABiABDIHCAIQABjvBTIHCAMQABjvBTIHCAQQABjvBTIHCAUQABjvBdIBCTYzMzRqMGoxNagCCLACAfEF6v76Q7zTHew&sourceid=chrome&source=chrome.rb&ie=UTF-8#smwie=1"
+              >
+                400 first ave.
+                <br />
+                suite 700
+                <br />
+                Minneapolis, MN 55401
+              </a>
             </h3>
           </div>
         </div>
