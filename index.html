@@ -10,7 +10,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Landing Page</title>
+    <title>MYBIKE landing</title>
     <link
       rel="preconnect"
       href="https://fonts.googleapis.com"
@@ -37,16 +37,16 @@
     <header class="header">
       <div class="header__content">
         <div class="top-bar">
-          <a href="#">
+          <a href="#" class="top-bar__logo">
             <img
-              class="top-bar__logo"
+              class="logo"
               src="src/images/whitelogo.svg"
               alt="MyBike logo"
             />
           </a>
           <div class="top-bar__icons">
             <a
-              href="#"
+              href="tel:+1 234 555-55-55"
               class="icon icon--phone"
             ></a>
             <a
@@ -67,9 +67,9 @@
     >
       <div class="menu__content">
         <div class="top-bar">
-          <a href="#">
+          <a href="top-bar__logo">
             <img
-              class="top-bar__logo"
+              class="logo"
               src="src/images/blacklogo.svg"
               alt="MyBike blackLogo"
             />
@@ -347,14 +347,14 @@
               aria-label="Email"
             />
 
-            <fieldset
+            <textarea
               class="contacts__input contacts__textarea"
               placeholder="Message"
               required
               aria-label="Message"
-            ></fieldset>
+            ></textarea>
 
-            <button class="contacts__button">Send</button>
+            <button class="contacts__button button">Send</button>
           </form>
 
           <div class="contacts__contact-info">
@@ -364,7 +364,7 @@
             <h3 class="contacts__text">hello@miami.com</h3>
             Address
             <h3 class="contacts__text">
-              400 first ave. suite 700 Minneapolis, MN 55401
+              400 first ave.<br> suite 700<br> Minneapolis, MN 55401
             </h3>
           </div>
         </div>

@@ -1,7 +1,7 @@
 .header {
   background-image: url(../images/bike.jpg);
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: 100%;
   background-size: cover;
 
   &__content {
@@ -14,19 +14,19 @@
 
   &__top {
     display: flex;
-    justify-content: space-between;
     flex-shrink: 0;
+    justify-content: space-between;
   }
 
   &__bottom {
     display: flex;
+    flex-grow: 1;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
 
     &-title {
-      font-weight: 700;
       font-size: 36px;
+      font-weight: 700;
       letter-spacing: -1.5px;
 
       @media (min-width: $tablet-min-width) {

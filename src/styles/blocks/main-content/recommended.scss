@@ -1,6 +1,6 @@
 .recommended {
   &__products {
-    @include page-grid
+    @include page-grid;
   }
 
   &__product {
@@ -9,6 +9,7 @@
     @include on-tablet {
       grid-column: 2 / -2;
     }
+
     @include on-desktop {
       grid-column: span 4;
     }
