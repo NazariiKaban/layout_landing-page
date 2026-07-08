@@ -104,8 +104,10 @@
     font-weight: 500;
     line-height: 140%;
 
+
     &:last-child {
       padding-bottom: 0;
+      color: $default-text-color;
     }
     a {
       &:visited {
