@@ -110,6 +110,8 @@
       color: $default-text-color;
     }
     a {
+      color: $default-text-color;
+
       &:visited {
         color: inherit;
       }
