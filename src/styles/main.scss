@@ -41,11 +41,22 @@
   line-height: 27px;
   color: #1d1d1d;
 
+  transition: all 0.3s ease;
+
   &:hover {
     box-shadow: 1px 4px 16px #e8e8f066;
   }
 
   &:active {
     box-shadow: 1px 4px 16px #e8e8f0a3;
+  }
+}
+
+.photo {
+  cursor: pointer;
+  transition: transform 0.3s;
+
+  &:hover {
+    transform: scale(1.1);
   }
 }

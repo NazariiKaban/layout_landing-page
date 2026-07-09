@@ -7,6 +7,11 @@
 .page {
   scroll-behavior: smooth;
 
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+
   font-family: Poppins, sans-serif;
   color: $default-text-color;
   letter-spacing: 0;

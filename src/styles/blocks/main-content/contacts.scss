@@ -1,4 +1,6 @@
 .contacts {
+  margin-bottom: 120px;
+
   &__wrapper {
     @include page-grid;
 
@@ -86,6 +88,7 @@
   }
 
   &__textarea {
+    resize: none;
     height: 148px;
     padding: 16px 14px;
     border-radius: 16px;
@@ -103,7 +106,6 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 140%;
-
 
     &:last-child {
       padding-bottom: 0;
