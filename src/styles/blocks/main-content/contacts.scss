@@ -1,5 +1,13 @@
 .contacts {
-  margin-bottom: 120px;
+  padding-bottom: 120px;
+
+  @include on-tablet {
+    padding-bottom: 102px;
+  }
+
+  @include on-desktop {
+    padding-bottom: 164px;
+  }
 
   &__wrapper {
     @include page-grid;
@@ -89,14 +97,21 @@
 
   &__textarea {
     resize: none;
+
     height: 148px;
     padding: 16px 14px;
     border-radius: 16px;
+
+    font-family: inherit;
   }
 
   &__button {
     width: 100%;
     margin-top: 32px;
+  }
+
+  &__link {
+    cursor: pointer;
   }
 
   &__text {
